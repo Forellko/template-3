@@ -1,14 +1,28 @@
 /* view port 
   width = 1920px
+  height = 4895px
 */
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 16px;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: 500;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 21px;
 }
 
 a {
@@ -26,23 +40,30 @@ header {
 .header__top {
   display: flex;
   justify-content: space-between;
-  margin-top: 8%;
-  margin-left: 20%;
-  margin-right: 21%;
+  margin-top: 53px;
+  margin-left: 21%;
+  margin-right: 17.9%;
+}
+
+.header__logo {
+  width: 4.5vw; 
+  height: 4.5vh;
+  padding-left: 0.6vw;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 32vw;
-  font-size: 85%;
+  width: 35.1vw;
+  letter-spacing: 2px;
 }
+
 
 .greeting {
   display: flex;
   justify-content: space-between;
   margin-top: 20vh;
-  margin-left: 487px;
+  margin-left: 488px;
   margin-right: 405px;
 }
