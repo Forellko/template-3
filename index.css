@@ -1,0 +1,48 @@
+/* view port 
+  width = 1920px
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 700px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8%;
+  margin-left: 20%;
+  margin-right: 21%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 32vw;
+  font-size: 85%;
+}
+
+.greeting {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20vh;
+  margin-left: 487px;
+  margin-right: 405px;
+}
