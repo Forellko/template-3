@@ -3,7 +3,9 @@
   height = 4895px
 */
 
+/* core */
 body {
+  margin: 0 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -11,6 +13,7 @@ body {
 
 h1, h2, h3 {
   font-weight: 500;
+  margin: 0 0;
 }
 
 h1 {
@@ -30,25 +33,33 @@ a {
   color: #000000;
 }
 
+.soft__text {
+  color: #727272;
+  line-height: 26.8px;
+}
+
+/* end core */
+
+/* header */
 header {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 700px;
+  height: 70vh;
+  background-color: #EEEFF1;
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
-  margin-top: 53px;
-  margin-left: 21%;
-  margin-right: 17.9%;
+  margin-top: 59px;
+  margin-left: 22%;
+  margin-right: 17.4%;
 }
 
 .header__logo {
   width: 4.5vw; 
   height: 4.5vh;
-  padding-left: 0.6vw;
 }
 
 nav {
@@ -63,7 +74,37 @@ nav {
 .greeting {
   display: flex;
   justify-content: space-between;
-  margin-top: 20vh;
-  margin-left: 488px;
-  margin-right: 405px;
+  margin-top: 15.2vh;
+  margin-left: 26.4vw;
+  margin-right: 18vw;
 }
+
+.greeting__image {
+  padding-top: 2vh;
+}
+
+.greeting__intro {
+  padding-left: 7vw;
+}
+
+.greeting__text {
+  padding-top: 2.7vh;
+}
+
+.greeting__send {
+  display: flex;
+  background-color: #34547A;
+  height: 6.7vh;
+  width: 12.2vw;
+  margin-top: 5.3vh;
+  align-items: center;
+  text-align: center;
+}
+
+.greeting__send-link {
+  letter-spacing: 2px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+/* end header */
