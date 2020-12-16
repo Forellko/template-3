@@ -134,16 +134,38 @@ nav {
   background-color: #34547A;
   height: 26vh;
 }
+
+/* h 50 tb 100 lr 415 */
 .works__list {
-  
+  display: flex;
+  justify-content: space-between;
+  margin: 10.5vh 0;
+  margin-right: 18vw;
+  margin-left: 22vw;
+  flex-grow: 1;
+  list-style: none;
+  padding-inline-start: 0;
 }
+
+/* w 141 */
 .works__current {
+  width: 8vw;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.works__couple {
+  height: 3vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .works__image {
 }
 .works__count {
 }
 .works__text {
+  margin: 0;
 }
 
 /*  */
