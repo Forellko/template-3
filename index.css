@@ -322,14 +322,24 @@ nav a:hover {
   margin-bottom: 2vh;
 }
 
-/*  */
-
+/* h 151 */
+footer {
+  display: flex;
+  height: 15vh;
+  background-color: #34547A;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .footer__part-name {
+  color: #ffffff;
 }
 .footer__name {
 }
 .footer__copyright {
 }
 .footer__contact {
+  display: flex;
+  justify-content: space-between;
+  width: 9vw;
 }
