@@ -42,6 +42,10 @@ a {
   line-height: 26.8px;
 }
 
+.text-web-together {
+  white-space: nowrap;
+}
+
 /*  */
 
 header {
@@ -212,15 +216,28 @@ nav {
   width: 19vw;
 }
 
-/*  */
-
+/* h 1004 tb 100 lr 400 */
 .how-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 94vh;
+  padding: 11vh 21vw;
+  padding-top: 7vh;
+  padding-left: 25vw;
+  padding-right: 20vw;
+  background-color: #eeeff1;
 }
-.how-work__text.soft__text {
+.how-work__text {
+  text-align: center;
+  padding: 0 12.5vw;
 }
 .how-work__show {
 }
 .how-work__play {
+  position: relative;
+  bottom: 375px;
 }
 .work-images {
 }
