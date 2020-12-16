@@ -47,7 +47,6 @@ a {
 header {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   height: 70vh;
   background-color: #EEEFF1;
 }
@@ -56,8 +55,8 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 59px;
-  margin-left: 22%;
-  margin-right: 17.4%;
+  margin-left: 22vw;
+  margin-right: 16.7vw;
 }
 
 .header__logo {
@@ -131,6 +130,7 @@ nav {
 /* h 250 */
 .works {
   display: flex;
+  justify-content: space-between;
   background-color: #34547A;
   height: 26vh;
 }
@@ -168,19 +168,48 @@ nav {
   margin: 0;
 }
 
-/*  */
+/* w 1150 h 450 tb 100 lr 385 */
 
 .my-skills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 16vw;
+  margin-right: 16vw;
 }
 .my-skills__part {
+  width: 31vw;
+  padding-top: 10vh;
+  padding-bottom: 11vh;
+  padding-left: 9vh;
 }
 .my-skills__h2 {
+  margin-bottom: 4vh;
 }
-.my-skills.skills-count {
+.skills-count {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0;
+  padding: 0 0;
+  margin-top: 3vh;
+  list-style: none;
 }
 .skills-count__exp {
 }
 .skills-count__exp-text {
+  margin:0;
+  margin-bottom: 0.4vh;
+}
+.skills-count__uncompleted {
+  height: 1.5vh;
+  padding-left: 9vh;
+}
+.skills-count__completed {
+  position: relative;
+  bottom: 19px;
+  height: 1.5vh;
+  width: 19vw;
 }
 
 /*  */
