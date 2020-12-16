@@ -243,7 +243,7 @@ nav a:hover {
   bottom: 375px;
 }
 
-/*  */
+/* нужно доработать */
 
 .work-images {
   display: grid;
@@ -254,22 +254,72 @@ nav a:hover {
   background-color: #34547A;
 }
 
-/*  */
-
-
+/* w 540 h 600 t 100 b 200 rl 690 */
 .ask-for-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #EEEFF1;
+  height: 60.5vh;
+  padding-top: 12.5vh;
+  padding-bottom: 6vh;
+  padding-left: 33.5vw;
+  padding-right: 29vw;
+  align-items: center;
 }
-.ask-for-site__text.soft__text {
+
+.ask-for-site__h2 {
+  text-align: center;
 }
-.ask-for-site__form.ask-form {
+
+.ask-for-site__text {
+  margin: 0;
+  padding: 0 4vw;
+  text-align: center;
+}
+.ask-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+  width: 30vw;
+}
+
+.ask-form__name, .ask-form__email, .ask-form__text {
+  border: none;
+}
+
+.ask-form__couple {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
 }
 .ask-form__name {
+  padding-left: 12px;
+  width: 13.5vw;
+  height: 5vh;
 }
 .ask-form__email {
+  padding-left: 12px;
+  width: 13.5vw;
+  height: 5vh;
 }
 .ask-form__text {
+  padding-left: 12px;
+  padding-top: 17px;
+  margin-bottom: 5vh; 
+  height: 15vh;
+  resize: none;
 }
+/* 190 55 */
 .ask-form__submit {
+  border:none;
+  background-color: #34547A;
+  color: #ffffff;
+  width: 10vw;
+  height: 6vh;
+  align-self: center;
+  margin-bottom: 2vh;
 }
 
 /*  */
