@@ -1,14 +1,18 @@
 /* view port 
   width = 1920px
-  height = 4895px
+  height = 950px
+  heightALL = 4895px
 */
 
-/* core */
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  background-color: #f9f9f9;
+  overflow-x:hidden;
 }
 
 h1, h2, h3 {
@@ -38,9 +42,8 @@ a {
   line-height: 26.8px;
 }
 
-/* end core */
+/*  */
 
-/* header */
 header {
   display: flex;
   flex-direction: column;
@@ -103,8 +106,100 @@ nav {
 
 .greeting__send-link {
   letter-spacing: 2px;
-  margin: 0 auto;
+  flex-grow: 1;
   color: #ffffff;
 }
 
-/* end header */
+/* w 1920 h 366  */
+/* w 540 h 147 lr 690 t 119 b 100 */
+.about-me {
+  height: 17vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 37vw;
+  padding-right: 33vw;
+  padding-top: 13vh;
+  padding-bottom: 8vh; 
+  text-align: center;
+}
+.about-me__couple {
+}
+.about-me__h2 {
+}
+
+/* h 250 */
+.works {
+  display: flex;
+  background-color: #34547A;
+  height: 26vh;
+}
+.works__list {
+  
+}
+.works__current {
+}
+.works__image {
+}
+.works__count {
+}
+.works__text {
+}
+
+/*  */
+
+.my-skills {
+}
+.my-skills__part {
+}
+.my-skills__h2 {
+}
+.my-skills.skills-count {
+}
+.skills-count__exp {
+}
+.skills-count__exp-text {
+}
+
+/*  */
+
+.how-work {
+}
+.how-work__text.soft__text {
+}
+.how-work__show {
+}
+.how-work__play {
+}
+.work-images {
+}
+
+/*  */
+
+
+.ask-for-site {
+}
+.ask-for-site__text.soft__text {
+}
+.ask-for-site__form.ask-form {
+}
+.ask-form__name {
+}
+.ask-form__email {
+}
+.ask-form__text {
+}
+.ask-form__submit {
+}
+
+/*  */
+
+
+.footer__part-name {
+}
+.footer__name {
+}
+.footer__copyright {
+}
+.footer__contact {
+}
