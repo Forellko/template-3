@@ -58,21 +58,22 @@ header {
 .header__top {
   display: flex;
   justify-content: space-between;
-  margin-top: 59px;
-  margin-left: 22vw;
-  margin-right: 16.7vw;
+  align-items:center;
+  margin-left: 15%;
+  margin-right: 17%;
+  padding-top: 0.5%;
 }
 
 .header__logo {
-  width: 4.5vw; 
-  height: 4.5vh;
+  width: 27%; 
+  height: 27%;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 35.1vw;
+  width: 52%;
   letter-spacing: 2px;
 }
 
@@ -84,29 +85,29 @@ nav a:hover {
 .greeting {
   display: flex;
   justify-content: space-between;
-  margin-top: 15.2vh;
-  margin-left: 26.4vw;
-  margin-right: 18vw;
+  margin-top: 5%;
+  margin-left: 26%;
+  margin-right: 18%;
 }
 
 .greeting__image {
-  padding-top: 2vh;
+  padding-top: 2%;
 }
 
 .greeting__intro {
-  padding-left: 7vw;
+  padding-left: 13%;
 }
 
 .greeting__text {
-  padding-top: 2.7vh;
+  padding-top: 5%;
 }
 
 .greeting__send {
   display: flex;
   background-color: #34547A;
-  height: 6.7vh;
-  width: 12.2vw;
-  margin-top: 5.3vh;
+  height: 26%;
+  width: 43%;
+  margin-top: 12%;
   align-items: center;
   text-align: center;
 }
@@ -124,15 +125,11 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 37vw;
-  padding-right: 33vw;
-  padding-top: 13vh;
-  padding-bottom: 8vh; 
+  padding-left: 38%;
+  padding-right: 33%;
+  padding-top: 7%;
+  padding-bottom: 4%;
   text-align: center;
-}
-.about-me__couple {
-}
-.about-me__h2 {
 }
 
 /* h 250 */
@@ -147,9 +144,9 @@ nav a:hover {
 .works__list {
   display: flex;
   justify-content: space-between;
-  margin: 10.5vh 0;
-  margin-right: 18vw;
-  margin-left: 22vw;
+  margin: 5.5% 0;
+  margin-right: 18%;
+  margin-left: 22%;
   flex-grow: 1;
   list-style: none;
   padding-inline-start: 0;
@@ -157,13 +154,12 @@ nav a:hover {
 
 /* w 141 */
 .works__current {
-  width: 8vw;
+  width: 13%;
   display: flex;
   justify-content: space-between;
   color: #ffffff;
 }
 .works__couple {
-  height: 3vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -181,60 +177,60 @@ nav a:hover {
 .my-skills {
   display: flex;
   justify-content: space-between;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  margin-left: 16vw;
-  margin-right: 16vw;
+  margin-top: 5.5%;
+  margin-bottom: 4%;
+  margin-left: 16%;
+  margin-right: 16%;
 }
 .my-skills__part {
-  width: 31vw;
-  padding-top: 10vh;
-  padding-bottom: 11vh;
-  padding-left: 9vh;
+  width: 31%;
+  padding-top: 8%;
+  padding-bottom: 9%;
+  padding-left: 7.5%;
 }
 .my-skills__h2 {
-  margin-bottom: 4vh;
+  margin-bottom: 12%;
 }
 .skills-count {
   display: flex;
   flex-direction: column;
   margin: 0 0;
   padding: 0 0;
-  margin-top: 3vh;
+  margin-top: 3%;
   list-style: none;
 }
 .skills-count__exp {
 }
 .skills-count__exp-text {
   margin:0;
-  margin-bottom: 0.4vh;
 }
 .skills-count__uncompleted {
-  height: 1.5vh;
-  padding-left: 9vh;
+  height: 1.5%;
+  padding-left: 9%;
 }
 .skills-count__completed {
   position: relative;
-  bottom: 19px;
-  height: 1.5vh;
-  width: 19vw;
+  bottom: 18px;
+  height: 25.5%;
+  width: 80%;
 }
 
 /* h 1004 tb 100 lr 400 */
+
 .how-work {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 95vh;
-  padding-top: 7vh;
-  padding-left: 25vw;
-  padding-right: 20vw;
+  padding-top: 5%;
+  padding-left: 25%;
+  padding-right: 20%;
   background-color: #eeeff1;
 }
 .how-work__text {
   text-align: center;
-  padding: 0 12.5vw;
+  padding: 0 23%;
 }
 .how-work__show {
 }
@@ -249,10 +245,26 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.work-images__unit:hover {
-  opacity: 0.8;
-  background-color: #34547A;
+
+
+.work-images__unit {
+  /* transition: 2s;
+  filter: grayscale(100%); */
 }
+
+
+.work-images__img-div {
+  transition: 2s;
+  filter: grayscale(100%);
+
+}
+
+.work-images__img-div:hover {
+  transition: 2s;
+  filter: grayscale(0%);
+}
+
+
 
 /* w 540 h 600 t 100 b 200 rl 690 */
 .ask-for-site {
@@ -260,11 +272,11 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   background-color: #EEEFF1;
-  height: 60.5vh;
-  padding-top: 12.5vh;
-  padding-bottom: 6vh;
-  padding-left: 33.5vw;
-  padding-right: 29vw;
+  height: 60vh;
+  padding-top: 6.5%;
+  padding-bottom: 4%;
+  padding-left: 33.5%;
+  padding-right: 29%;
   align-items: center;
 }
 
@@ -274,15 +286,15 @@ nav a:hover {
 
 .ask-for-site__text {
   margin: 0;
-  padding: 0 4vw;
+  padding: 0 11%;
   text-align: center;
 }
 .ask-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 40vh;
-  width: 30vw;
+  height: 70%;
+  width: 80%;
 }
 
 .ask-form__name, .ask-form__email, .ask-form__text {
@@ -292,23 +304,22 @@ nav a:hover {
 .ask-form__couple {
   display: flex;
   justify-content: space-between;
-  margin-top: 2vh;
+  margin-top: 2%;
 }
 .ask-form__name {
   padding-left: 12px;
-  width: 13.5vw;
-  height: 5vh;
+  width: 45%;
+  height: 300%;
 }
 .ask-form__email {
   padding-left: 12px;
-  width: 13.5vw;
-  height: 5vh;
+  width: 45%;
+  height: 300%;
 }
 .ask-form__text {
   padding-left: 12px;
-  padding-top: 17px;
-  margin-bottom: 5vh; 
-  height: 15vh;
+  padding-top: 3%; 
+  height: 40%;
   resize: none;
 }
 /* 190 55 */
@@ -316,10 +327,10 @@ nav a:hover {
   border:none;
   background-color: #34547A;
   color: #ffffff;
-  width: 10vw;
-  height: 6vh;
+  width: 35%;
+  height: 13%;
   align-self: center;
-  margin-bottom: 2vh;
+  margin-bottom: 6%;
 }
 
 /* h 151 */
@@ -333,13 +344,16 @@ footer {
 
 .footer__part-name {
   color: #ffffff;
+  margin-left: 6%;
 }
 .footer__name {
 }
 .footer__copyright {
+  font-size: 12px;
 }
 .footer__contact {
   display: flex;
   justify-content: space-between;
-  width: 9vw;
+  width: 9.5%;
+  margin-left: 10%;
 }
