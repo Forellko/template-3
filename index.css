@@ -11,10 +11,12 @@ body {
   font-weight: 400;
   font-size: 16px;
   background-color: #f9f9f9;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 500;
   margin: 0 0;
 }
@@ -41,7 +43,7 @@ a {
   line-height: 26.8px;
 }
 
-.text-web-together {
+text-web-together {
   white-space: nowrap;
 }
 
@@ -57,14 +59,14 @@ header {
 .header__top {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   margin-left: 15%;
   margin-right: 17%;
   padding-top: 0.5%;
 }
 
 .header__logo {
-  width: 27%; 
+  width: 27%;
   height: 27%;
 }
 
@@ -158,15 +160,17 @@ nav a:hover {
   justify-content: space-between;
   color: #ffffff;
 }
+
 .works__couple {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-.works__image {
-}
-.works__count {
-}
+
+.works__image {}
+
+.works__count {}
+
 .works__text {
   margin: 0;
 }
@@ -181,15 +185,18 @@ nav a:hover {
   margin-left: 16%;
   margin-right: 16%;
 }
+
 .my-skills__part {
   width: 31%;
   padding-top: 8%;
   padding-bottom: 9%;
   padding-left: 7.5%;
 }
+
 .my-skills__h2 {
   margin-bottom: 12%;
 }
+
 .skills-count {
   display: flex;
   flex-direction: column;
@@ -198,15 +205,18 @@ nav a:hover {
   margin-top: 3%;
   list-style: none;
 }
-.skills-count__exp {
-}
+
+.skills-count__exp {}
+
 .skills-count__exp-text {
-  margin:0;
+  margin: 0;
 }
+
 .skills-count__uncompleted {
   height: 1.5%;
   padding-left: 9%;
 }
+
 .skills-count__completed {
   position: relative;
   bottom: 18px;
@@ -227,12 +237,14 @@ nav a:hover {
   padding-right: 20%;
   background-color: #eeeff1;
 }
+
 .how-work__text {
   text-align: center;
   padding: 0 23%;
 }
-.how-work__show {
-}
+
+.how-work__show {}
+
 .how-work__play {
   position: relative;
   bottom: 375px;
@@ -262,14 +274,14 @@ nav a:hover {
   align-items: center;
 }
 
-.work-images__img-div > div {
+.work-images__img-div>div {
   position: absolute;
   z-index: 1;
   opacity: 0;
   width: 25%;
   height: 49.5%;
   transition: opacity 1s ease-out;
-  background-color: rgba(52,84,122,0.8);
+  background-color: rgba(52, 84, 122, 0.8);
 }
 
 .img-div__layer {
@@ -319,6 +331,7 @@ nav a:hover {
   padding: 0 11%;
   text-align: center;
 }
+
 .ask-form {
   display: flex;
   flex-direction: column;
@@ -327,7 +340,9 @@ nav a:hover {
   width: 80%;
 }
 
-.ask-form__name, .ask-form__email, .ask-form__text {
+.ask-form__name,
+.ask-form__email,
+.ask-form__text {
   border: none;
 }
 
@@ -336,25 +351,29 @@ nav a:hover {
   justify-content: space-between;
   margin-top: 2%;
 }
+
 .ask-form__name {
   padding-left: 12px;
   width: 45%;
   height: 300%;
 }
+
 .ask-form__email {
   padding-left: 12px;
   width: 45%;
   height: 300%;
 }
+
 .ask-form__text {
   padding-left: 12px;
-  padding-top: 3%; 
+  padding-top: 3%;
   height: 40%;
   resize: none;
 }
+
 /* 190 55 */
 .ask-form__submit {
-  border:none;
+  border: none;
   background-color: #34547A;
   color: #ffffff;
   width: 35%;
@@ -376,11 +395,13 @@ footer {
   color: #ffffff;
   margin-left: 6%;
 }
-.footer__name {
-}
+
+.footer__name {}
+
 .footer__copyright {
   font-size: 12px;
 }
+
 .footer__contact {
   display: flex;
   justify-content: space-between;
@@ -388,7 +409,67 @@ footer {
   margin-left: 10%;
 }
 
-
 @media screen and (min-width: 320px) and (max-width: 1279px) {
-  
+
+  h1 {
+    font-size: 36px;
+  }
+
+  header {
+    height: 100vh;
+  }
+
+  .header__top {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__logo {
+    width: 42%;
+    height: 42%;
+    margin-top: 5%;
+    margin-left: -4%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .greeting {
+    height: 74%;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .greeting__image {
+    height: 300px;
+    width: 300px;
+  }
+
+
+.greeting__intro {
+  height: 49%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.greeting__text {
+  text-align: center;
+  line-height: 19px;
+  padding: 0% 7%;
+}
+
+.greeting__send {
+  margin: 0;
+  width: 60%;
+  height: 22%;
+}
+
+
 }
