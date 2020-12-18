@@ -194,7 +194,7 @@ nav a:hover {
 }
 
 .my-skills__h2 {
-  margin-bottom: 12%;
+  margin-bottom: 0%;
 }
 
 .skills-count {
@@ -209,19 +209,20 @@ nav a:hover {
 .skills-count__exp {}
 
 .skills-count__exp-text {
-  margin: 0;
+  margin-top: 10%;
 }
 
 .skills-count__uncompleted {
+  position: absolute;
   height: 1.5%;
+  width: 15%;
   padding-left: 9%;
 }
 
 .skills-count__completed {
-  position: relative;
-  bottom: 18px;
-  height: 25.5%;
-  width: 80%;
+  position: absolute;
+  height: 1.5%;
+  width: 15%;
 }
 
 /* h 1004 tb 100 lr 400 */
@@ -509,6 +510,68 @@ footer {
   justify-content: flex-start;
   flex-direction: column;
   margin-left: 10%;
+}
+
+/* skills */
+
+.my-skills {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.my-skills__part {
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  padding-top: 25%;
+}
+
+
+.my-skills__h2 {
+  text-align: center;
+}
+
+.skills-count {
+  height: 60%;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+
+.skills-count__exp {
+  width: 95%;
+  height: 50%;
+}
+
+.skills-count__exp-text {
+  margin: 0;
+  margin-top: 10%;
+  margin-bottom: -5%;
+}
+
+.skills-count__uncompleted {
+  position: absolute;
+  height: 6%;
+  width: 80%;
+  padding-left: 9%;
+}
+
+.skills-count__completed {
+  position: absolute;
+  height: 6%;
+  width: 70%;
+}
+
+.my-skills__face {
+  margin-top: 24%;
+  display: block;
+  width: 342px;
+  height: 265px;
 }
 
 
