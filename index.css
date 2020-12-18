@@ -485,5 +485,31 @@ footer {
   line-height: 19px;
 }
 
+/* works */
+
+.works {
+  height: 58vh;
+}
+
+.works__list {
+  display: grid;
+  height: 52vh;
+  grid-template-columns: 1fr 1fr;
+  margin: 7% 0;
+}
+
+.works__current {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.works__couple {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
 
 }
