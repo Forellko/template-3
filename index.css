@@ -692,4 +692,25 @@ footer {
   margin-bottom: 29%;
 }
 
+/* footer */
+
+footer {
+  height: 15vh;
+}
+
+.footer__part-name {
+  margin-left: 0%;
+  text-align: center;
+}
+
+.footer__name {}
+
+.footer__copyright {
+  font-size: 12px;
+}
+
+.footer__contact {
+  display: none;
+}
+
 }
