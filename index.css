@@ -605,4 +605,40 @@ footer {
   height: 14%;
 }
 
+/* .work-images */
+
+
+.work-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 99vh;
+}
+
+
+#img-div1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#img-div2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#img-div3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#img-div4 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.work-images__img-div>div {
+  width: 50%;
+  height: 25%;
+}
+
 }
