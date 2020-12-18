@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -416,7 +416,7 @@ footer {
   }
 
   header {
-    height: 100vh;
+    height: 97vh;
   }
 
   .header__top {
@@ -436,7 +436,7 @@ footer {
   }
 
   .greeting {
-    height: 74%;
+    height: 75%;
     margin: 0;
     flex-direction: column;
     align-items: center;
@@ -469,6 +469,20 @@ footer {
   margin: 0;
   width: 60%;
   height: 22%;
+}
+
+/* about-me */
+
+.about-me {
+  height: 24vh;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 22%;
+  padding-bottom: 19%;
+}
+
+.about-me__text {
+  line-height: 19px;
 }
 
 
