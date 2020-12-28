@@ -45,22 +45,24 @@ a {
 .text-web-together {
   white-space: nowrap;
 }
-/* 
+
 .wrapper {
   width: 1111px;
   margin: 0 auto;
-} */
+  height: 100%;
+}
 
 /*  */
 
 header {
-  display: flex;
-  justify-content: space-between;
   height: 96px;
   padding-top: 57px;
-  padding-left: 25%;
-  padding-right: 25%;
   background-color: #EEEFF1;
+}
+
+.header__block {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -80,16 +82,16 @@ nav a:hover {
   color: #34547A;
 }
 
+.greeting__section {
+  height: 300px;
+  padding-top: 140px;
+  padding-bottom: 146px;
+  background-color: #EEEFF1;
+}
 
 .greeting {
   display: flex;
   justify-content: space-between;
-  height: 300px;
-  padding-top: 140px;
-  padding-bottom: 146px;
-  padding-left: 22%;
-  padding-right: 22%;
-  background-color: #EEEFF1;
 }
 
 .greeting__image {
@@ -120,24 +122,34 @@ nav a:hover {
 
 /* w 1920 h 366  */
 /* w 540 h 147 lr 690 t 119 b 100 */
-.about-me {
+
+.about-me__section {
   height: 147px;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.about-me {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 38%;
-  padding-right: 33%;
-  padding-top: 119px;
-  padding-bottom: 100px;
   text-align: center;
 }
 
+.about-me__text {
+  padding: 0 26%;
+}
+
 /* h 250 */
+
+.works__section {
+  height: 250px;
+  background-color: #34547A;
+}
+
 .works {
   display: flex;
   justify-content: space-between;
-  background-color: #34547A;
-  height: 250px;
 }
 
 /* h 50 tb 100 lr 415 */
@@ -178,11 +190,15 @@ nav a:hover {
 
 /* w 1150 h 450 tb 100 lr 385 */
 
-.my-skills {
+.my-skills__section {
   height: 450px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.my-skills {
   display: flex;
   justify-content: space-between;
-  padding: 100px 16%;
 }
 
 .my-skills__part {
@@ -196,7 +212,7 @@ nav a:hover {
 }
 
 .my-skills__h2 {
-  margin: 0%;
+  margin: 0;
 }
 
 .skills-count {
@@ -234,16 +250,17 @@ nav a:hover {
 
 /* h 1004 tb 100 lr 400 */
 
+.how-work__section {
+  height: 1000px;
+  padding-top: 100px;
+  background-color: #eeeff1;
+}
+
 .how-work {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 1000px;
-  padding-top: 100px;
-  padding-left: 25%;
-  padding-right: 25%;
-  background-color: #eeeff1;
 }
 
 .how-work__text {
@@ -260,22 +277,32 @@ nav a:hover {
 
 /* .work-images */
 
+.work-images__section {
+  display: flex;
+  height: 768px;
+  width: 100%;
+  justify-content: center;
+}
+
 .work-images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 960px;
+  justify-self: center;
+  padding: 34px 0;
 }
 
 .img-div-1 {
   background: url(img/7-work1.png);
   background-size: cover;
-  height: 480px;
+  height: 350px;
+  width: 350px;
 }
 
 .img-div-2 {
   background: url(img/8-work2.png);
   background-size: cover;
-  height: 480px;
+  height: 350px;
+  width: 350px;
 }
 
 .work-images__img-div {
@@ -287,8 +314,8 @@ nav a:hover {
   position: absolute;
   z-index: 1;
   opacity: 0;
-  height: 480px;
-  width: 25%;
+  height: 350px;
+  width: 350px;
   transition: opacity 0.4s ease-out;
   background-color: rgba(52, 84, 122, 0.8);
 }
@@ -318,16 +345,18 @@ nav a:hover {
 
 
 /* w 540 h 600 t 100 b 200 rl 690 */
-.ask-for-site {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+.ask-for-site__section {
   background-color: #EEEFF1;
   height: 600px;
   padding-top: 100px;
   padding-bottom: 100px;
-  padding-left: 30%;
-  padding-right: 30%;
+}
+
+.ask-for-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -337,7 +366,7 @@ nav a:hover {
 
 .ask-for-site__text {
   margin: 0;
-  padding: 0 11%;
+  padding: 0 26%;
   text-align: center;
 }
 
@@ -391,9 +420,13 @@ nav a:hover {
 
 /* h 151 */
 footer {
-  display: flex;
-  height: 151px;
   background-color: #34547A;
+  height: 150px;
+}
+
+.footer__block {
+  height: 100%;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -423,6 +456,12 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 1279px) {
 
+  .wrapper {
+    width: 340px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
   h1 {
     font-size: 36px;
   }
@@ -438,19 +477,18 @@ footer {
     display: none;
   }
 
-/* 
-  #wrapper {
-    width: 340px;
-    margin: 0 auto;
-  } */
 
-  .greeting {
+  .greeting__section {
     height: 550px;
-    flex-direction: column;
-    align-items: center;
     padding: 0;
     padding-top: 67px;
     padding-bottom: 95px;
+
+  }
+
+  .greeting {
+    flex-direction: column;
+    align-items: center;
   }
 
 
@@ -483,20 +521,27 @@ footer {
 
 /* about-me */
 
-.about-me {
-  width: 323px;
+.about-me__section {
+  padding-top: 85px;
+  padding-bottom: 85px;
   height: 178px;
-  padding: 85px 28px;
+}
+
+.about-me {
 }
 
 .about-me__text {
+  padding: 0 3%;
   line-height: 19px;
 }
 
 /* works */
 
-.works {
+.works__section {
   height: 477px;
+}
+
+.works {
 }
 
 .works__list {
@@ -521,9 +566,14 @@ footer {
 
 /* skills */
 
-.my-skills {
-  padding-top: 82px;
+
+.my-skills__section {
   height: 600px;
+  padding-top: 82px;
+
+}
+
+.my-skills {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
@@ -573,11 +623,14 @@ footer {
 
 /* how work */
 
-.how-work {
-  padding: 0; margin: 0;
+.how-work__section {
   padding-top: 93px;
   padding-bottom: 20px;
   height: 425px;
+
+}
+
+.how-work {
 }
 
 .how-work__h2 {
@@ -603,12 +656,17 @@ footer {
 
 /* .work-images */
 
+.work-images__section {
+  display: flex;
+  height: 818px;
+  width: 100%;
+  justify-content: center;
+}
 
 .work-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 755px;
-  padding: 34px 0;
+  height: 750px;
 }
 
 .img-div-1 {
@@ -648,11 +706,14 @@ footer {
 
 /* ask-for-site */
 
-.ask-for-site {
-  padding: 0; margin: 0;
-  padding-top: 91px;
-  padding-bottom: 100px;
+
+.ask-for-site__section {
   height: 650px;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.ask-for-site {
 }
 
 
@@ -660,31 +721,31 @@ footer {
 }
 
 .ask-for-site__text {
-  margin: 0;
-  padding: 0;
   line-height: 20px;
+  padding: 0;
 }
 
 .ask-form {
-  padding: 0; margin: 0;
+  height: 475px;
+  width: 342px;
 }
 
 
 .ask-form__couple {
   flex-direction: column;
-  margin: 0;
+  height: 130px;
 }
 
 .ask-form__name, .ask-form__email{
+  width: 342px;
 }
 
 .ask-form__text {
+  width: 342px;
   resize: none;
 }
 
 .ask-form__submit {
-  width: 190px;
-  height: 55px;
 }
 
 /* footer */
