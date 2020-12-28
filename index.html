@@ -10,47 +10,37 @@
   <title>About me</title>
 </head>
 
-<!-- margin - mg -->
-<!-- vw = 1920 vh = 4895 -->
 <body>
-
-  <!-- vh = 700 -->
-  <header>
-
-  <!-- vw = 1105 vh = 60 mg-t = 57 mg-l = 402 mg-r = 413 -->
-    <section class="header__top">
-      <!-- between = 57 -->
-      <img class="header__logo" src="./img/1-logo.svg">
-      <!-- between = 400 -->
-      <nav>
-        <a href="">ГЛАВНАЯ</a>
-      <!-- between = 42 -->
-        <a href="">ОБ АВТОРЕ</a>
-        <a href="">РАБОТЫ</a>
-        <a href="">ПРОЦЕСС</a>
-        <a href="">КОНТАКТЫ</a>
-      </nav>
-    </section>
-    
-    <section class="greeting">
-      <img class="greeting__image" src="./img/2-notebook.svg" alt="Ноутбук" width="357px" height="233.7px">
-      <div class="greeting__intro">
-        <h1 class="greeting__h1">Дизайн и верстка</h1>
-        <p class="greeting__text soft__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и <span class="text-web-together">вэб-дизайне.</span> Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-        <div class="greeting__send">
-          <a class="greeting__send-link" href="">НАПИСАТЬ МНЕ</a>
-        </div>
-      </div>
-    </section>
+  <header class="wrapper">
+    <img class="header__logo" src="./img/1-logo.svg">
+    <!-- between = 400 -->
+    <nav>
+      <a href="">ГЛАВНАЯ</a>
+    <!-- between = 42 -->
+      <a href="">ОБ АВТОРЕ</a>
+      <a href="">РАБОТЫ</a>
+      <a href="">ПРОЦЕСС</a>
+      <a href="">КОНТАКТЫ</a>
+    </nav>
   </header>
 
   <main>
-    <section class="about-me">
+
+    <section class="greeting wrapper">
+        <img class="greeting__image" src="./img/2-notebook.svg" alt="Ноутбук" width="357px" height="233.7px">
+        <div class="greeting__intro">
+          <h1 class="greeting__h1">Дизайн и верстка</h1>
+          <p class="greeting__text soft__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и <span class="text-web-together">вэб-дизайне.</span> Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+          <a class="greeting__send" href="">НАПИСАТЬ МНЕ</a>
+        </div>
+    </section>
+
+    <section class="about-me wrapper">
         <h2 class="about-me__h2">Обо мне</h2>
         <p class="about-me__text soft__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и <span class="text-web-together">вэб-дизайне.</span> Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
     </section>
 
-    <section class="works">
+    <section class="works wrapper">
       <ul class="works__list">
         <li class="works__current">
           <img class="works__image" src="./img/3-project.svg" alt="Проект" width="50px" height="50px">
@@ -97,24 +87,24 @@
       </ul>
     </section>
 
-    <section class="my-skills">
+    <section class="my-skills wrapper">
       <div class="my-skills__part">
         <h2 class="my-skills__h2">Мои навыки</h2>
         <ul class="my-skills__countr skills-count">
           <li class="skills-count__exp">
             <p class="skills-count__exp-text soft__text">Adobe Photoshop</p>
             <img class="skills-count__uncompleted" src="./img/4-2-uncompleted.svg" alt="Не изучено" width="349.36px" height="4px">
-            <img class="skills-count__completed" src="./img/4-1-completed.svg" alt="Изучено" width="445px" height="4px">
+            <img class="skills-count__completed" src="./img/4-3-completed.png" alt="Изучено" width="445px" height="4px">
           </li>
           <li class="skills-count__exp">
             <p class="skills-count__exp-text soft__text">Adobe Photoshop</p>
             <img class="skills-count__uncompleted" src="./img/4-2-uncompleted.svg" alt="Не изучено" width="349.36px" height="4px">
-            <img class="skills-count__completed" src="./img/4-1-completed.svg" alt="Изучено" width="445px" height="4px">
+            <img class="skills-count__completed" src="./img/4-3-completed.png" alt="Изучено" width="445px" height="4px">
           </li>
           <li class="skills-count__exp">
             <p class="skills-count__exp-text soft__text">Adobe Photoshop</p>
             <img class="skills-count__uncompleted" src="./img/4-2-uncompleted.svg" alt="Не изучено" width="349.36px" height="4px">
-            <img class="skills-count__completed" src="./img/4-1-completed.svg" alt="Изучено" width="445px" height="4px">
+            <img class="skills-count__completed" src="./img/4-3-completed.png" alt="Изучено" width="445px" height="4px">
           </li>
         </ul>
       </div>
@@ -122,7 +112,7 @@
       <img class="my-skills__face" src="./img/4-face.png" alt="Фотография лица" width="555px" height="450px">
     </section>
 
-    <section class="how-work">
+    <section class="how-work wrapper">
       <h2 class="how-work__h2">Как я работаю</h2>
       <p class="how-work__text soft__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и <span class="text-web-together">вэб-дизайне.</span> Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
       <img class="how-work__show" src="./img/5-video.png" width="1110px" height="600px">
@@ -140,7 +130,7 @@
        <div class="work-images__img-div img-div-1"><div class="img-div__layer"><img src="./img/10-view.svg"></div></div>
     </section>
 
-    <section class="ask-for-site">
+    <section class="ask-for-site wrapper">
       <h2 class="ask-for-site__h2">Хотите веб-сайт?</h2>
       <p class="ask-for-site__text soft__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и <span class="text-web-together">вэб-дизайне.</span> Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
       <form class="ask-for-site__form ask-form">
@@ -155,7 +145,7 @@
 
   </main>
 
-  <footer>
+  <footer class="wrapper">
     <div class="footer__part-name">
       <h3 class="footer__name">Иванов Иван</h3>
       <p class="footer__copyright">(с) 2018. Все права защищены.</p>
